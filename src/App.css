@@ -606,7 +606,7 @@ html, body {
 /* Tablets & Small Laptops (max-width: 768px) */
 @media (max-width: 768px) {
   .about {
-    padding: 2rem 1rem;
+    padding: 10rem 1rem;
     height: auto;
   }
 
