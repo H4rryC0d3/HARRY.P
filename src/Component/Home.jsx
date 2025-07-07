@@ -25,8 +25,8 @@ const Home = () => {
         "React Developer",
         "MERN Stack Developer",
       ],
-      typeSpeed: 60,
-      backSpeed: 30,
+      typeSpeed: 30,
+      backSpeed: 20,
       loop: true,
     });
 
