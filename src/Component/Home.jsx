@@ -22,7 +22,6 @@ const Home = () => {
    const typed = new Typed(typedEl.current, {
   strings: [
     "Frontend Developer",
-    "React Developer",
     "MERN Stack Developer",
   ],
   typeSpeed: 50,      // Typing speed (ms per character)
