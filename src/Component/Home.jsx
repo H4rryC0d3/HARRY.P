@@ -19,16 +19,20 @@ const Home = () => {
   ];
 
   useEffect(() => {
-    const typed = new Typed(typedEl.current, {
-      strings: [
-        "Frontend Developer",
-        "React Developer",
-        "MERN Stack Developer",
-      ],
-      typeSpeed: 30,
-      backSpeed: 20,
-      loop: true,
-    });
+   const typed = new Typed(typedEl.current, {
+  strings: [
+    "Frontend Developer",
+    "React Developer",
+    "MERN Stack Developer",
+  ],
+  typeSpeed: 50,      // Typing speed (ms per character)
+  backSpeed: 25,      // Backspace speed (ms per character)
+  startDelay: 300,    // Delay before typing starts (ms)
+  backDelay: 1500,    // Pause before backspacing (ms)
+  loop: true,         // Repeat indefinitely
+  smartBackspace: true, // Only backspace what doesn't match the next string
+});
+
 
     const intervalTime = setInterval(() => {
       setCurrentTime(new Date());
