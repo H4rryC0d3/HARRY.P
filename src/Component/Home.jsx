@@ -24,14 +24,15 @@ const Home = () => {
     "Frontend Developer",
     "MERN Stack Developer",
   ],
-  typeSpeed: 50,      // Typing speed (ms per character)
-  backSpeed: 25,      // Backspace speed (ms per character)
-  startDelay: 300,    // Delay before typing starts (ms)
-  backDelay: 1500,    // Pause before backspacing (ms)
-  loop: true,         // Repeat indefinitely
-  smartBackspace: true, // Only backspace what doesn't match the next string
+  typeSpeed: 10,          // Typing speed (ms)
+  backSpeed: 10,          // Backspacing speed
+  backDelay: 1000,        // Delay before backspacing
+  startDelay: 200,        // Delay before typing starts
+  smartBackspace: true,   // ⬅️ Only backspace what’s different
+  loop: true,             // Keeps looping
+  showCursor: true,
+  cursorChar: "|",    
 });
-
 
     const intervalTime = setInterval(() => {
       setCurrentTime(new Date());
