@@ -77,14 +77,7 @@ const MainLogic = () => {
         ScrollReveal().reveal(".home-contact h1, .about-img", { origin: "left" });
         ScrollReveal().reveal(".home-contact p, .about-content", { origin: "right" });
 
-        // ✅ Type.js Effect
-        const typed = new Typed(".multiple-text", {
-            strings: ["Frontend Developer", "Web Designer"],
-            typeSpeed: 50,
-            backSpeed: 50,
-            backDelay: 1000,
-            loop: true,
-        });
+       
 
         return () => {
             window.removeEventListener("scroll", handleScroll);
