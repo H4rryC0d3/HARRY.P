@@ -409,6 +409,7 @@ html, body {
 }
 
 /* Responsive Breakpoints */
+/* -------------------- Max Width 1024px -------------------- */
 @media (max-width: 1024px) {
   .home-container {
     flex-direction: column;
@@ -434,17 +435,62 @@ html, body {
     gap: 0.8rem;
     align-items: center;
   }
-  .greeting-banner {
-  width: 100%;
-  text-align: center;
-  font-size: 1.5rem;
-  color: var(--main-color);
-  margin-bottom: 20px;
-  margin-top: 80px;
-  font-weight: 600;
-  animation: fadeSlide 1s ease-in-out;
-}}
 
+  .greeting-banner {
+    width: 100%;
+    text-align: center;
+    font-size: 1.6rem;
+    color: var(--main-color);
+    margin-bottom: 20px;
+    margin-top: 80px;
+    font-weight: 600;
+    animation: fadeSlide 1s ease-in-out;
+  }
+
+  .tech-rotator {
+    font-size: 1.2rem;
+  }
+}
+
+/* -------------------- Max Width 768px -------------------- */
+@media (max-width: 768px) {
+  .home-container {
+    padding: 1.8rem 1.5rem;
+  }
+
+  .home-avatar {
+    width: 200px;
+    height: 200px;
+  }
+
+  .home-name {
+    font-size: 3rem;
+  }
+
+  .intro,
+  .designation,
+  .tagline,
+  .clock {
+    font-size: 1.2rem;
+  }
+
+  .btn-outline,
+  .btn-filled {
+    width: 100%;
+    font-size: 1.05rem;
+  }
+
+  .tech-rotator {
+    font-size: 1.1rem;
+    padding: 0.9rem;
+  }
+
+  .greeting-banner {
+    font-size: 1.6rem;
+  }
+}
+
+/* -------------------- Max Width 600px -------------------- */
 @media (max-width: 600px) {
   .home-container {
     padding: 1.5rem 1rem;
@@ -456,14 +502,14 @@ html, body {
   }
 
   .home-name {
-    font-size: 2.6rem;
+    font-size: 3rem;
   }
 
   .intro,
   .designation,
   .tagline,
   .clock {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
   }
 
   .btn-outline,
@@ -478,16 +524,47 @@ html, body {
   }
 
   .greeting-banner {
-  width: 100%;
-  text-align: center;
-  font-size: 1.5rem;
-  color: var(--main-color);
-  margin-bottom: 20px;
-  margin-top: 80px;
-  font-weight: 600;
-  animation: fadeSlide 1s ease-in-out;
+    font-size: 1.5rem;
+  }
 }
+
+/* -------------------- Max Width 480px -------------------- */
+@media (max-width: 480px) {
+  .home-container {
+    padding: 1.2rem 0.8rem;
+  }
+
+  .home-avatar {
+    width: 160px;
+    height: 160px;
+  }
+
+  .home-name {
+    font-size: 3.4rem;
+  }
+
+  .intro,
+  .designation,
+  .tagline,
+  .clock {
+    font-size: 1.4rem;
+  }
+
+  .btn-outline,
+  .btn-filled {
+    font-size: 0.95rem;
+  }
+
+  .tech-rotator {
+    font-size: 1.2rem;
+    padding: 0.7rem;
+  }
+
+  .greeting-banner {
+    font-size: 1.6rem;
+  }
 }
+
 
 
 
