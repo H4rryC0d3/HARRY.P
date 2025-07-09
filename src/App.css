@@ -14,14 +14,14 @@
 
 /* Default theme (light theme) */
 /* 🌞 Light Mode */
-:root {
+:root{
   --bg-color: #FAF9F6;                /* Light soft background */
   --snd-bg-color: #FFFFFF;            /* Clean white secondary */
   --text-color: #1C1C1C;              /* Dark readable text */
 
   --main-color: #2C2C2C;              /* Updated from #4A90E2 to deep gray */
-  --accent-color: #A8DADC;            /* Replaced warm peach with soft teal */
-  --highlight-color: #FFC1CC;         /* Soft blush pink highlight */
+  --accent-color:#295F98;            /* Replaced warm peach with soft teal */
+  --highlight-color: #C96868;         /* Soft blush pink highlight */
 
   --lavender: #B39CD0;                /* Optional secondary accent */
   --light-gray: #E4E4E4;              /* Utility color for muted elements */
