@@ -1,13 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
-import Typed from "typed.js";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import "../App.css";
 import profileImg from "../assets/AvatarMaker.png";
 
 const Home = () => {
-  const typedEl = useRef(null);
   const [currentTime, setCurrentTime] = useState(new Date());
   const [index, setIndex] = useState(0);
+  const [textIndex, setTextIndex] = useState(0);
 
   const techGoals = [
     "🚀 Improving UI/UX design skills",
@@ -18,24 +17,13 @@ const Home = () => {
     "🧩 Contributing to open-source projects",
   ];
 
-  useEffect(() => {
-  const typed = new Typed(typedEl.current, {
-  strings: [
+  const rotatingTitles = [
     "Frontend Developer",
     "React Developer",
     "MERN Stack Developer",
-  ],
-  typeSpeed: 160,         // ⬆️ Slower typing (higher value = slower)
-  backSpeed: 120,         // ⬆️ Slower backspacing
-  backDelay: 2500,        // Pause before backspacing
-  startDelay: 800,        // Delay before typing starts initially
-  smartBackspace: true,   // Only backspace what changed
-  loop: true,
-  showCursor: true,
-  cursorChar: "|",
-});
+  ];
 
-
+  useEffect(() => {
     const intervalTime = setInterval(() => {
       setCurrentTime(new Date());
     }, 1000);
@@ -44,10 +32,14 @@ const Home = () => {
       setIndex((prev) => (prev + 1) % techGoals.length);
     }, 3000);
 
+    const intervalTitle = setInterval(() => {
+      setTextIndex((prev) => (prev + 1) % rotatingTitles.length);
+    }, 3000);
+
     return () => {
-      typed.destroy();
       clearInterval(intervalTime);
       clearInterval(intervalGoals);
+      clearInterval(intervalTitle);
     };
   }, []);
 
@@ -75,8 +67,22 @@ const Home = () => {
       <div className="home-right">
         <p className="intro">Hello, I'm</p>
         <h1 className="home-name">Harsh Padiyar</h1>
+
+        {/* ✅ Animated Role (Framer Motion replaces Typed.js) */}
         <p className="designation">
-          I'm a <span className="multiple-text" ref={typedEl}></span>
+          I'm a{" "}
+          <AnimatePresence mode="wait">
+            <motion.span
+              key={rotatingTitles[textIndex]}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.5 }}
+              className="animated-role"
+            >
+              {rotatingTitles[textIndex]}
+            </motion.span>
+          </AnimatePresence>
         </p>
 
         <p className="tagline">🧠 Crafting Code with Creativity</p>
