@@ -76,10 +76,10 @@ const About = () => {
             <a href="https://github.com/H4rryC0d3" target="_blank" rel="noreferrer">
               <i className="fa-brands fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/harsh-padiyar-b6ba46308" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/harsh-padiyar-b6ba46308?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noreferrer">
               <i className="fa-brands fa-linkedin"></i>
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noreferrer">
+            <a href="https://x.com/HarshPadiyar4?t=CdRNLUo2GFumrB2uUmIFAw&s=09" target="_blank" rel="noreferrer">
               <i className="fa-brands fa-twitter"></i>
             </a>
             <a href="https://instagram.com/harsh_padiyar28" target="_blank" rel="noreferrer">
