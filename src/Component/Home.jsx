@@ -45,7 +45,7 @@ const Home = () => {
 
   const openCV = () => {
     window.open(
-      "https://drive.google.com/file/d/1pFMvgOtctGLPEStZgkAPYooED2-ec8gu/view?usp=drive_link",
+      "https://drive.google.com/file/d/1NChXPKX1geVlFxuvNMAepFOq55SpOAIf/view?usp=drive_link",
       "_blank"
     );
   };
