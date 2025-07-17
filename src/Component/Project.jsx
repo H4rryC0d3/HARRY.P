@@ -49,14 +49,6 @@ const projects = [
       "Portfolio is a responsive web application built with React.js, showcasing my skills, projects, and experiences in an interactive and visually appealing way.",
     link: "https://hpadiyar.vercel.app/",
     github: "https://github.com/H4rryC0d3/Portfolio"
-  },
-  {
-    img: todolist,
-    title: "Todo List",
-    description:
-      "This is a simple and responsive to-do list app for task management.",
-    link: "https://todos-list-eta-brown.vercel.app/",
-    github: "https://github.com/H4rryC0d3/TodoList"
   }
 ];
 
