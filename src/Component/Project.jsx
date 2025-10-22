@@ -23,8 +23,8 @@ const projects = [
     title: "Furniture",
     description:
       "Furniture Website is a responsive web application built with React.js, offering a seamless browsing experience for exploring and purchasing stylish furniture.",
-    link: "https://furni-craft-web-app.vercel.app/",
-    github: "https://github.com/H4rryC0d3/Furniture"
+    link: "https://wood-topaz.vercel.app/",
+    github: "https://github.com/H4rryC0d3/Wood.git"
   },
   {
     img: healthhub,
@@ -116,3 +116,4 @@ const Projects = () => {
 };
 
 export default Projects;
+
