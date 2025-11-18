@@ -15,8 +15,8 @@ const projects = [
     title: "FoodieSpot",
     description:
       "FoodieSpot is a full-stack web application built with the MERN stack, designed to provide a seamless and dynamic food discovery experience for users.",
-    link: "https://foodie-spot-kappa.vercel.app/",
-    github: "https://github.com/H4rryC0d3/FoodieSpot"
+    link: "https://foodie-orpin-pi.vercel.app/",
+    github: "https://github.com/H4rryC0d3/foodie.git"
   },
   {
     img: furniture,
@@ -116,4 +116,5 @@ const Projects = () => {
 };
 
 export default Projects;
+
 
