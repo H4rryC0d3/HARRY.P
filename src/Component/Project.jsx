@@ -2,14 +2,23 @@ import React from "react";
 import { motion } from "framer-motion";
 import "../App.css";
 
+import shophub from "../assets/shophub.png";
 import foodiespot from "../assets/foodiespot.png";
 import furniture from "../assets/furniture.png";
 import healthhub from "../assets/HealthHub.png";
 import textutils from "../assets/TextUtils.png";
 import portfolio from "../assets/Portfolio.png";
-import todolist from "../assets/Todolist.png";
+// import todolist from "../assets/Todolist.png";
 
 const projects = [
+   {
+    img: shophub,
+    title: "ShopHub",
+    description:
+     " ShopHub is a MERN stack e-commerce web application with authentication, cart, and order management features.",
+         link: "https://shophub-gray.vercel.app/",
+    github: "https://github.com/H4rryC0d3/Shophub.git"
+  },
   {
     img: foodiespot,
     title: "FoodieSpot",
@@ -116,5 +125,6 @@ const Projects = () => {
 };
 
 export default Projects;
+
 
 
